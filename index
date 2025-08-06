@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Artur Aragão Everton - Junior Developer & AI Engineering Trainee</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -201,7 +198,7 @@
         <section class="section">
             <h2 class="section-title">🚀 Featured Projects & Learning Journey</h2>
             <div class="project-buttons">
-                <a href="courses.html" target="_blank" rel="noopener noreferrer" class="project-button">
+                <a href="/learning-journey/courses.html" target="_blank" rel="noopener noreferrer" class="project-button">
                     🧠 My AI & Development Journey on GitHub
                 </a>
                 <a href="https://fabiobeverton.github.io/everton-showcase/" target="_blank" rel="noopener noreferrer" class="project-button">
@@ -210,17 +207,12 @@
             </div>
         </section>
 
-        <!-- O restante do conteúdo permanece igual -->
-        <!-- ... seções Professional Profile, Learning Roadmap, Education, etc ... -->
-
         <section class="section">
             <h2 class="section-title">🧩 Professional Profile</h2>
             <p>
                 Enthusiastic and proactive Junior Developer...
             </p>
         </section>
-        <!-- Conteúdo continua como antes até o fim -->
-
     </main>
 
     <footer>
