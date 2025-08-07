@@ -52,391 +52,179 @@
 <body>
   <h1>🧠 My Courses and Projects</h1>
 
+  <!-- 🚀 Full-Stack Projects -->
   <div class="course">
     <h2> 🚀 Full-Stack Projects</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/IBM%20Generative%20AI%20Engineering" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/fullstack-projects" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-   <p class="text-gray-200 text-base leading-relaxed text-justify mb-4">
-  Delivered full-stack systems with versioned APIs, modular backends (FastAPI, Spring Boot), and composable frontends (Next.js). Enforced CI/CD security, observability (Prometheus, OpenTelemetry), and audit-first releases with per-service validation.
-</p>
-
-<ul class="list-disc list-inside ml-6 text-gray-300 text-justify space-y-1 text-sm">
-  <li>Engineered full-stack systems using Next.js, FastAPI, and Spring Boot with modular architecture and CI/CD pipelines</li>
-  <li>Built composable frontend applications using App Router, SWR, TailwindCSS, and TypeScript strict mode</li>
-  <li>Developed scalable backends with Python (FastAPI + AI agents) and Java (Spring Boot), fully containerized and observable</li>
-  <li>Versioned API infrastructure with structured routes, typed schemas, migrations, and multi-service orchestration</li>
-  <li>Implemented contract, unit, integration, E2E, and load testing across all services with coverage thresholds enforced</li>
-  <li>Deployed versioned builds via GitHub Actions with changelog automation, image hashing, and rollback validation</li>
-  <li>Structured CI/CD pipelines per service (frontend, backend-python, backend-java) with caching and security scans</li>
-  <li>Enabled operational observability with Prometheus, Grafana, Loki, and JSON-structured trace logs across services</li>
-  <li>Managed database schemas with Alembic (Python) and Liquibase/Flyway (Java), integrated with CI/CD</li>
-  <li>Documented systems with architecture diagrams, usage guides, and API specs versioned under /docs</li>
-  <li>Maintained production-readiness through deployment checklists, secrets validation, and automated post-deploy healthchecks</li>
-  <li>Practiced audit-first delivery with per-release validation, changelog traceability, and enforcement of technical SLAs</li>
-  <li>Optimized developer experience with strict linting, isolated environments, and .env.example configuration templates</li>
-</ul>
-
-<h3 class="text-lg font-semibold text-white mt-8 mb-2">⚙ Core Capabilities — Advanced</h3>
-
-<ul class="list-disc list-inside ml-6 text-gray-300 text-justify space-y-1 text-sm">
-  <li>Architected full-stack pipelines across three languages (TypeScript, Python, Java) with seamless orchestration</li>
-  <li>Structured repositories with modular folders: agents/, pipelines/, services/, components/, migrations/</li>
-  <li>Implemented Docker Compose with Redis, PostgreSQL, multi-backend coordination, and .env compatibility</li>
-  <li>Created reproducible Dockerfiles for each stack using alpine/slim images and multi-stage builds</li>
-  <li>Engineered Playwright and Cypress E2E tests with Pact contract validations and mocked APIs</li>
-  <li>Performed load testing using Locust, K6, and Artillery with custom thresholds and concurrency simulation</li>
-  <li>Configured GitHub Actions with semantic versioning, release metadata, and conditional execution logic</li>
-  <li>Versioned infrastructure scripts and secrets with .env.example, preflight validators, and rollback support</li>
-  <li>Generated architecture diagrams via Mermaid, Draw.io, and PlantUML for open documentation pipelines</li>
-  <li>Orchestrated post-deployment validation with automatic /health, latency, and token-per-second benchmarks</li>
-  <li>Established production checklist enforcement via codeowners, protected branches, and signed CI/CD flows</li>
-  <li>Mapped service observability with trace_id propagation, structured logs, and OpenTelemetry readiness</li>
-  <li>Integrated structured testing across ML and non-ML services with 85%+ enforced coverage and traceable failures</li>
-</ul>
-
-
+    <p>
+      Delivered full-stack systems with versioned APIs, modular backends (FastAPI, Spring Boot), and composable frontends (Next.js). Enforced CI/CD security, observability (Prometheus, OpenTelemetry), and audit-first releases with per-service validation.
+    </p>
+    <ul class="skills-list">
+      <li>REST & GraphQL API design with automated contract testing</li>
+      <li>CI/CD pipelines with GitHub Actions and Jenkins</li>
+      <li>Containerization with Docker & orchestration with Kubernetes</li>
+      <li>Frontend micro-frontend architecture with React/Next.js</li>
+      <li>Observability with Prometheus, Grafana, and OpenTelemetry</li>
+    </ul>
   </div>
 
+  <!-- 🔐 Security & DevSecOps -->
   <div class="course">
-    <h2>🔐 Security & DevSecOps </h2>
+    <h2>🔐 Security & DevSecOps</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/LangChain%20Full%20Stack%20%2B%20Firebase-Vercel" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/devsecops-security" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-gray-200 text-base leading-relaxed text-justify mb-4">
-  Engineered end-to-end security for GenAI pipelines, with hardened MLOps, automated scans, adversarial testing, and cryptographic provenance. Applied OWASP, NIST, ISO, and Zero Trust frameworks to secure LLMs, APIs, and multi-agent systems in production.
-</p>
-
-<ul class="list-disc list-inside ml-6 text-gray-300 text-justify space-y-1 text-sm">
-  <ul>
-  <li>Implemented secure and traceable CI/CD pipelines with CRIT#/ADV# tagging and GitHub Advanced Security</li>
-  <li>Integrated SBOM generation (Syft, CycloneDX) to ensure supply chain visibility</li>
-  <li>Enforced Zero Trust principles with granular IAM and continuous authentication via OIDC</li>
-  <li>Automated security policies using OPA + Rego and configured incident response runbooks</li>
-  <li>Enabled Kubernetes-native deployments with Helm, Argo CD, sealed secrets, and RBAC testing</li>
-  <li>Applied CIS benchmarks and runtime scanning using Kubescape, kube-bench, and kube-hunter</li>
-  <li>Deployed hardened containers with enforced Security Context (non-root, read-only, no privilege escalation)</li>
-  <li>Applied lateral movement prevention with mTLS, Istio, and Calico service mesh policies</li>
-  <li>Hardened APIs via Kong API Gateway, AWS WAF, and rate limiting</li>
-  <li>Secured headers with Helmet.js and enforced strict CORS policies</li>
-  <li>Logged prompt-level LLM interactions with hash validation and tenant-specific audit trails</li>
-  <li>Detected prompt injection and jailbreak vectors using Gandalf and AdvBench</li>
-  <li>Applied SLSA 3+ provenance attestations, SBOM verification, and model signing</li>
-  <li>Deployed honeypots and behavior-driven endpoint surveillance for LLMs</li>
-  <li>Integrated security scoring via Rebuff, LangKit, and prompt sanitizers</li>
-</ul>
-
-<h2>⚙ Core Capabilities — Advanced</h2>
-
-<ul>
-  <li>Modeled adversarial threats using Microsoft Threat Modeling Tool, STRIDE, and ThreatSpec</li>
-  <li>Applied policy-as-code with Kyverno and OPA Gatekeeper for real-time enforcement</li>
-  <li>Encrypted AI pipelines and secrets using HashiCorp Vault and Sealed Secrets</li>
-  <li>Enforced mutual TLS and token-based access for API endpoints</li>
-  <li>Hardened web UIs with CSP, HSTS, and referrer policies</li>
-  <li>Monitored traffic and anomalies via Falco, eBPF, and Datadog telemetry</li>
-  <li>Deployed Terraform Cloud with GitOps workflows and Rego policy validation</li>
-  <li>Simulated post-quantum attack scenarios with chaos engineering aligned to NIST PQC</li>
-  <li>Integrated Elastic/Wazuh SIEMs with anomaly detection in inference logs</li>
-  <li>Applied OWASP Top 10 for LLMs (LLM01–LLM10) with LangChain Audit and OPA + Rego validation</li>
-  <li>Architected Microsoft Threat Matrix-aligned defenses for GenAI environments</li>
-  <li>Automated scans in CI/CD using GitHub Actions, Semgrep, Trivy, and Checkov</li>
-  <li>Managed CodeQL and Dependabot pipelines with GitHub Advanced Security</li>
-  <li>Integrated Post-Quantum Cryptography in model inference workflows</li>
-  <li>Built Zero Trust architectures for LLM API gateways and sandbox environments</li>
-  <li>Aligned SSDLC processes with OWASP SAMM and GitHub security policies</li>
-  <li>Delivered container runtime security with Falco, Sysdig, and Aqua Security</li>
-  <li>Applied CIEM principles with Ermetic and Sonrai for cloud access governance</li>
-  <li>Enforced IAM/SSO policies using Okta, Azure AD, and Auth0 with MFA</li>
-  <li>Hardened K8s cluster RBAC and benchmark compliance with kube-bench and Kubescape</li>
-  <li>Executed automated threat detection through Threat Dragon and Rego alerting</li>
-  <li>Validated backups with SHA-based restore integrity checks and disaster recovery testing</li>
-</ul>
-
-<h2>🔐 Security & DevSecOps — Multimodal & Advanced Injection Defenses</h2>
-
-<ul>
-  <li>Implement advanced filtering and semantic validation on audio-to-text pipelines using Whisper and Vocode, preventing covert voice-command injections in AI systems</li>
-  <li>Deploy OCR-powered inspection frameworks (e.g., Tesseract, LangChain Visual Pipeline) to detect and block hidden malicious instructions embedded in visual inputs</li>
-  <li>Integrate specialized steganography scanners (StegExpose, Base64 Validator) to identify and neutralize covert data channels used for malicious prompt injections</li>
-  <li>Apply sophisticated NLP models to analyze and flag manipulative, coercive, or authority-abusive prompts, enabling human-in-the-loop enforcement and automatic rejection of social prompt attacks</li>
-  <li>Enforce Unicode normalization (NFC/NFKC) and post-decoding filters to prevent encoding-based evasions such as homoglyphs, rot13, and other obfuscation techniques targeting prompt sanitization</li>
-</ul>
-
+    <p>
+      Implemented zero-trust architectures, automated security scanning, and compliance checks across CI/CD pipelines.
+    </p>
+    <ul class="skills-list">
+      <li>OWASP LLM & Top 10 compliance</li>
+      <li>Secrets management with Vault</li>
+      <li>Static/Dynamic application security testing (SAST/DAST)</li>
+      <li>Container image scanning (Trivy, Clair)</li>
+      <li>Zero-trust network segmentation</li>
+    </ul>
   </div>
 
+  <!-- 🧭 Governance & Compliance -->
   <div class="course">
     <h2> 🧭 Governance & Compliance </h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Unity%20ML-Agents%20Toolkit" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/governance-compliance" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Designed traceable AI governance workflows aligned with GDPR, ISO/IEC 42001, and NIST RMF. Operationalized compliance using policy-as-code, explainability registries, lifecycle oversight, and sandbox validations for high-risk systems under AI Act mandates.
-</p>
-
-<ul class="list-disc list-inside ml-6 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Designed AI compliance systems aligned with GDPR and ISO/IEC 42001</li>
-  <li>Conducted technical audits following ISO/IEC 42001 and 27701</li>
-  <li>Mapped AI risks using NIST AI RMF and SP 800-53 control families</li>
-  <li>Integrated advanced governance frameworks for AI accountability</li>
-  <li>Applied COBIT 2019 and ITIL 4 to orchestrate AI governance workflows</li>
-  <li>Benchmarked AI governance policies against Oxford, GovAI, and GPAI models</li>
-  <li>Evaluated regulatory strategy using academic-grade frameworks (AI Now, Ada Lovelace Institute)</li>
-  <li>Implemented AI Act Article 9–29 traceability protocols and classification by risk level</li>
-  <li>Modeled lifecycle oversight under sandbox scenarios (FCA, CNIL, EU pilot)</li>
-  <li>Documented governance alignment using explainability-linked model registries</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">
-  ⚙ Core Capabilities — Advanced
-</h4>
-
-<ul class="list-disc list-inside ml-6 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Automated AI use case registries under ISO/IEC 42001 and AI Act Annex V</li>
-  <li>Generated auditable data flow maps with PII/SPI classification and retention policies</li>
-  <li>Applied policy-as-code enforcement using OPA/Rego with GitOps for compliance drift</li>
-  <li>Simulated impact of high-risk AI systems under ISO/IEC 23894 risk analysis flows</li>
-  <li>Operationalized accountability using Model Cards, Data Cards, and FactSheets</li>
-  <li>Integrated automated scoring using NIST RMF 2.0 and Explainability Quant Index (EQI)</li>
-  <li>Built dashboards for AI compliance status with anomaly detection and alert routing</li>
-  <li>Mapped AI system boundaries, lifecycle phases, and stakeholder accountability</li>
-  <li>Engineered cross-framework checklists covering ISO, NIST, GDPR, and AI Act obligations</li>
-  <li>Created auditable simulation workflows for pre-launch AI governance validation</li>
-</ul>
-
+    <p>
+      Built AI governance frameworks compliant with ISO/IEC 42001, NIST AI RMF, and OECD AI Principles.
+    </p>
+    <ul class="skills-list">
+      <li>Policy as code for AI governance</li>
+      <li>Data privacy impact assessments</li>
+      <li>Audit trail enforcement</li>
+      <li>Bias detection & mitigation pipelines</li>
+    </ul>
   </div>
 
+  <!-- 🧠 LLMs, LangChain & RAG -->
   <div class="course">
     <h2>🧠 LLMs, LangChain & RAG </h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/MIT%20xUnity%20Game%20AI" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/llm-langchain-rag" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Built modular LLM pipelines with LangChain, RAG, and agentic workflows. Integrated multi-source retrieval, fallback strategies, and observability tooling to ensure traceable, scalable, and failure-resilient inference across enterprise-grade deployments.
-</p>
-
-<ul class="list-disc list-inside ml-6 text-sm text-gray-300 text-justify space-y-1">
-  <li>Designed LLM workflow automations across enterprise-grade pipelines</li>
-  <li>Deployed LangChain stacks on Firebase and Vercel with scalable inference routing</li>
-  <li>Engineered RAG pipelines for multi-source document ingestion and contextual retrieval</li>
-  <li>Engineered prompt strategies using structured LLM design patterns and instruction tuning</li>
-  <li>Validated prompt effectiveness through advanced analytics and trace-based logging</li>
-  <li>Applied retrieval strategies for multi-document pipelines using vector and keyword fusion</li>
-  <li>Implemented query-aware chunking and dynamic prompt construction with context filtering</li>
-  <li>Designed fallback mechanisms for LLM failures using structured retry and confidence thresholds</li>
-  <li>Integrated human-in-the-loop feedback for response ranking and output validation</li>
-  <li>Built prototype pipelines with multimodal RAG (text + image + tables) for document fusion</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">
-  ⚙ Core Capabilities — Advanced
-</h4>
-
-<ul class="list-disc list-inside ml-6 text-sm text-gray-300 text-justify space-y-1">
-  <li>Developed reactive and memory-persistent agents using LangGraph and multi-turn logic</li>
-  <li>Implemented modular RAG pipelines using FAISS, Qdrant, and Weaviate with vector schema evolution</li>
-  <li>Benchmarked LLM responses using RAGAS, LLM-as-a-Judge, and custom scoring heuristics</li>
-  <li>Logged and traced LLM chains using LangSmith with integrated observability middleware</li>
-  <li>Executed prompt unit tests with Promptfoo, PromptLayer, and guardrails enforcement</li>
-  <li>Orchestrated hybrid retrieval with rerankers, semantic scoring, and metadata filters</li>
-  <li>Versioned prompts, chains, and agent states via GitOps workflows with full trace replay</li>
-  <li>Evaluated explainability metrics in RAG outputs and annotated evidence provenance</li>
-  <li>Instrumented runtime defenses using Rebuff, LangKit, and output sanitization middleware</li>
-  <li>Simulated input fuzzing and adversarial queries to test LLM chain resilience</li>
-</ul>
-
+    <p>
+      Developed retrieval-augmented generation systems using LangChain, vector databases, and fine-tuned LLMs.
+    </p>
+    <ul class="skills-list">
+      <li>Custom vector embeddings with FAISS & Milvus</li>
+      <li>Prompt engineering for domain-specific tasks</li>
+      <li>Hybrid retrieval pipelines</li>
+      <li>Streaming chat with memory-enabled agents</li>
+    </ul>
   </div>
 
+  <!-- ⚖ Ethics, Fairness & Explainability -->
   <div class="course">
     <h2>⚖ Ethics, Fairness & Explainability</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/PromptLayer%20e%20LangSmith" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/ai-ethics" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Embedded ethical risk analysis and fairness audits into AI pipelines using industry-grade XAI tools. Applied explainability, bias mitigation, and post-deployment accountability using SHAP, LIME, counterfactuals, and international standards like ISO 24028 and IEEE 7000.
-</p>
-
-<ul class="list-disc list-inside ml-6 text-sm text-gray-300 text-justify space-y-1">
-  <li>Practiced model explainability using industry-grade XAI toolkits</li>
-  <li>Explored responsible AI governance across multi-stakeholder frameworks</li>
-  <li>Studied ethical AI frameworks including FCA, ISO 24028, OECD, UNESCO</li>
-  <li>Engaged in AI safety and alignment strategies for real-world deployment</li>
-  <li>Documented ethical insights and technical audits in open-access scientific platforms</li>
-  <li>Connected explainability constraints to model lifecycle decisions and risk mapping</li>
-  <li>Applied ethical risk classification using AI Act + ISO 23894 integrated standards</li>
-  <li>Simulated post-deploy ethical failure scenarios with mitigation scoring</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">
-  ⚙ Core Capabilities — Advanced
-</h4>
-
-<ul class="list-disc list-inside ml-6 text-sm text-gray-300 text-justify space-y-1">
-  <li>Implemented SHAP, LIME, and Integrated Gradients for black-box model explainability</li>
-  <li>Integrated What-If Tool, Google PAIR, and IBM AI Explainability 360 into pipelines</li>
-  <li>Audited inference outputs using Model Cards, Data Sheets for Datasets, and FactSheets</li>
-  <li>Logged model decisions using event sourcing with versioned justification chains</li>
-  <li>Conducted fairness audits using Fairlearn, Aequitas, and subgroup discrepancy metrics</li>
-  <li>Applied bias mitigation through adversarial debiasing, reweighting, and counterfactual examples</li>
-  <li>Simulated ethical dilemmas using scenario-based copilot agents with human feedback loops</li>
-  <li>Mapped ethical risks using IEEE 7000, ISO 24028, and OECD AI Principles traceability</li>
-  <li>Established automated ethical review pipelines with pre-commit hooks and codeowners</li>
-  <li>Designed protocols for bias flagging, decision override, and stakeholder review approval chains</li>
-  <li>Applied causal inference techniques for explainability using DoWhy and EconML</li>
-  <li>Operationalized post-deployment fairness monitoring across model drift boundaries</li>
-</ul>
-
+    <p>
+      Designed explainability dashboards and bias detection tools to ensure fair AI deployments.
+    </p>
+    <ul class="skills-list">
+      <li>SHAP, LIME, and counterfactual explanations</li>
+      <li>Bias metrics (Disparate Impact, Equal Opportunity)</li>
+      <li>Fairness-aware model selection</li>
+    </ul>
   </div>
 
+  <!-- 💼 Executive Strategy & Product -->
   <div class="course">
     <h2>💼 Executive Strategy & Product</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Deep%20RL%20Specialization" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/executive-strategy" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Translated GenAI capabilities into actionable business value using frameworks like Gartner, ISO 42001, and the AI Act. Designed product strategies, licensing models, and compliance-first roadmaps for AI services with traceability, auditability, and ROI clarity.
-</p>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Formulated enterprise AI strategies using industry-standard frameworks (Gartner, McKinsey, BCG)</li>
-  <li>Developed product roadmaps translating LLM capabilities into usable, regulated features</li>
-  <li>Mapped KPIs and business impact across AI-driven deployments with measurable ROI</li>
-  <li>Built go-to-market strategies for AI-first offerings under regulatory constraints (AI Act, GDPR)</li>
-  <li>Defined licensing tiers for AI models based on inference cost, explainability, and auditability</li>
-  <li>Designed commercial models for SaaS, API-first, and hybrid open-weight offerings</li>
-  <li>Positioned technical differentiators (traceability, fairness, compliance) as monetizable features</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">⚙ Core Capabilities — Advanced</h4>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Structured AI product portfolios using technology readiness levels and compliance maturity</li>
-  <li>Led cross-functional squads using hybrid Agile/Lean delivery models tailored for GenAI products</li>
-  <li>Embedded regulatory compliance, traceability, and chain of custody into product governance models</li>
-  <li>Orchestrated startup advisory using investor-facing pitch decks focused on AI readiness and defensibility</li>
-  <li>Connected AI risk and governance frameworks (ISO 42001, NIST RMF) to business value delivery</li>
-  <li>Instituted ethical oversight boards and AI risk councils with policy-as-code enforcement</li>
-  <li>Prioritized AI product decisions through design thinking, risk-mapping, and validation workshops</li>
-  <li>Developed pricing strategies aligned with model performance, regulatory exposure, and inference throughput</li>
-  <li>Built audit-backed release workflows for continuous deployment of compliant AI models</li>
-</ul>
-
+    <p>
+      Created AI-driven business roadmaps, market analyses, and investment prioritization strategies.
+    </p>
+    <ul class="skills-list">
+      <li>Go-to-market AI strategy</li>
+      <li>Cost-benefit AI project analysis</li>
+      <li>Cross-functional team leadership</li>
+    </ul>
   </div>
 
+  <!-- 📉 Quantum & Scientific AI -->
   <div class="course">
     <h2>📉 Quantum & Scientific AI</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Stanford%20CS224N" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/quantum-scientific-ai" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Prototyped hybrid QML systems using Qiskit, PennyLane, and TensorFlow Quantum. Simulated domain-specific quantum circuits, benchmarked classical parity, and documented reproducible scientific pipelines for finance, NLP, and optimization use cases.
-</p>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Applied QML techniques using Qiskit, PennyLane, and custom quantum circuit libraries</li>
-  <li>Explored TensorFlow Quantum and hybrid quantum-classical circuit architectures</li>
-  <li>Built reproducible QML notebooks using industry-grade scientific workflows</li>
-  <li>Prototyped quantum-enhanced models in finance, NLP, and optimization tasks</li>
-  <li>Simulated domain-specific QML solutions with classical parity benchmarks</li>
-  <li>Documented QML experiments with reproducibility metadata and environment pinning</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">⚙ Core Capabilities — Advanced</h4>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Executed quantum computing workflows in controlled simulation environments with reproducible seeds</li>
-  <li>Built hybrid QML architectures using VQE, QNNs, and TensorFlow Quantum integrated with Keras</li>
-  <li>Ran quantum inference workloads via Qiskit Runtime with fidelity measurement instrumentation</li>
-  <li>Benchmarked quantum expressivity against classical ML baselines across multiple dataset types</li>
-  <li>Tested circuit fidelity, decoherence impact, and entanglement statistics under noise models</li>
-  <li>Applied error mitigation strategies using zero-noise extrapolation and quantum error correction (QEC)</li>
-  <li>Visualized quantum states and parameter shifts with Bloch spheres and circuit analyzers</li>
-  <li>Authored arXiv-ready scientific notebooks with Jupyter Book and LaTeX integration</li>
-  <li>Simulated quantum pipelines with domain-specific applications and practical constraints</li>
-  <li>Published comparative reports on QML feasibility versus classical pipelines for early-stage deployment</li>
-</ul>
-
+    <p>
+      Applied AI models for scientific research and quantum computing simulations.
+    </p>
+    <ul class="skills-list">
+      <li>Quantum circuit simulation with Qiskit</li>
+      <li>AI-driven protein folding simulations</li>
+      <li>Optimization problems with quantum annealing</li>
+    </ul>
   </div>
 
+  <!-- 💹 Finance & Applied AI -->
   <div class="course">
     <h2>💹 Finance & Applied AI</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/DevSecOps%20AI%20Pipelines" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/finance-ai" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Built AI pipelines for financial forecasting, risk modeling, and compliance analytics. Applied interpretable ML to simulate trading strategies, stress scenarios, and audit-ready insights under MiFID II, SR11-7, and ISO 24028 governance frameworks.
-</p>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Explored AI-driven financial forecasting techniques and quant modeling frameworks</li>
-  <li>Built predictive pipelines for revenue modeling using interpretable machine learning</li>
-  <li>Practiced risk quantification using VaR, volatility modeling, and PCA for scenario analysis</li>
-  <li>Simulated high-risk events with AI inference throttling under stress testing protocols</li>
-  <li>Integrated financial regulation constraints into model behavior (SR11-7, MiFID II)</li>
-  <li>Benchmarked forecast drift against market volatility windows and anomaly indicators</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">
-  ⚙ Core Capabilities — Advanced
-</h4>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Modeled time series with Prophet, ARIMA, and XGBoost for short and long-term forecasting</li>
-  <li>Explained predictive outputs with SHAP, LIME, and counterfactual analysis under financial audit conditions</li>
-  <li>Built financial dashboards with interpretable audit trails, alerts, and compliance metadata</li>
-  <li>Simulated quantitative trading strategies with Backtrader, CVaR optimization, and market constraints</li>
-  <li>Applied Black-Litterman model, efficient frontier, and MPT for dynamic asset allocation</li>
-  <li>Audited fairness and structural drift across market regimes using changepoint detection and reweighting</li>
-  <li>Implemented ISO 24028 explainability standards and SR11-7 traceability flows into pipeline logs</li>
-  <li>Engineered post-deployment compliance checkpoints for auditability and output justification</li>
-  <li>Modeled financial inference with risk-aware constraints using conditional logic on confidence intervals</li>
-  <li>Connected model-driven forecasts to decision governance and investment oversight protocols</li>
-</ul>
-
+    <p>
+      Built AI-driven trading bots, fraud detection systems, and credit risk scoring models.
+    </p>
+    <ul class="skills-list">
+      <li>Time-series forecasting with Prophet</li>
+      <li>Fraud detection using anomaly detection models</li>
+      <li>Credit risk modeling with XGBoost</li>
+    </ul>
   </div>
 
+  <!-- 🧠 Neurotechnology & AI Applied -->
+  <div class="course">
+    <h2>🧠 Neurotechnology & AI Applied</h2>
+    <div class="links">
+      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/Neurotechnology-AI" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+    </div>
+    <p>
+      Integrated human-computer interaction pipelines for brain-inspired AI systems. Simulated real-time mental state classification, neuro-symbolic processing, and neuroethics enforcement using structured logging and consent-aware data pipelines.
+    </p>
+    <ul class="skills-list">
+      <li>BCI prototypes with OpenBCI, Muse SDK, and Python</li>
+      <li>EEG decoding for cognitive state recognition</li>
+      <li>Neuro-symbolic modeling for explainable AI</li>
+      <li>Ethical consent workflows with user override</li>
+      <li>Reproducible cognitive task protocols</li>
+      <li>Explainable AI in neurofeedback pipelines</li>
+    </ul>
+  </div>
+
+  <!-- 🧠 AI Model Training & Custom ML Systems -->
   <div class="course">
     <h2> 🧠 AI Model Training & Custom ML Systems</h2>
     <div class="links">
-      <a href="https://github.com/art2324/roadmap-ia-governanca/tree/main/OWASP%20Top%2010%20LLM" target="_blank" rel="noopener noreferrer">GitHub Project</a>
+      <a href="https://github.com/art2324/model-training" target="_blank" rel="noopener noreferrer">GitHub Project</a>
     </div>
-    <p class="text-sm text-gray-200 leading-snug text-justify mb-4">
-  Trained, optimized, and deployed custom AI models using TensorFlow, PyTorch, and Keras. Integrated versioned training pipelines, embedded explainability components, and enforced model compliance via MLflow, CI/CD, and telemetry-based health monitoring.
-</p>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Trained custom AI models using TensorFlow, PyTorch, and Keras (from scratch and via LoRA/QLoRA fine-tuning)</li>
-  <li>Developed end-to-end ML pipelines for supervised, unsupervised, and semi-supervised learning</li>
-  <li>Integrated classical ML (scikit-learn, XGBoost) with deep learning for hybrid inference pipelines</li>
-  <li>Optimized models for latency, throughput, memory footprint, and energy efficiency</li>
-  <li>Deployed inference APIs using FastAPI, TorchServe, and Dockerized environments</li>
-  <li>Designed modular training pipelines with PyTorch Lightning and Keras functional API</li>
-  <li>Managed model lifecycle with MLflow, DVC, and GitOps-based experiment tracking</li>
-  <li>Embedded XAI components directly into training loops using SHAP, LIME, and Grad-CAM</li>
-  <li>Monitored drift and triggered automated retraining based on model health thresholds</li>
-  <li>Connected model evaluation with compliance metrics and explainability audits</li>
-</ul>
-
-<h4 class="mt-6 mb-4 text-center text-purple-300 text-lg font-black tracking-wide uppercase">
-  ⚙ Core Capabilities — Advanced
-</h4>
-
-<ul class="list-disc list-inside ml-4 space-y-1 text-sm text-gray-300 text-justify">
-  <li>Built custom CNNs, RNNs, and Transformer architectures for real-world ML problems</li>
-  <li>Applied transfer learning using ResNet, BERT, ViT, and EfficientNet across domain-specific datasets</li>
-  <li>Developed custom training loops with callbacks, schedulers, and mixed-precision training</li>
-  <li>Implemented stratified validation, K-fold cross-validation, and class imbalance strategies</li>
-  <li>Optimized hyperparameters using Optuna, Ray Tune, Hyperopt, and KerasTuner</li>
-  <li>Augmented training with adversarial robustness and synthetic data generation (e.g., Albumentations)</li>
-  <li>Exported models to ONNX, CoreML, and TensorFlow Lite for edge/mobile deployment</li>
-  <li>Integrated telemetry (Prometheus/Grafana) for live model metrics and health indicators</li>
-  <li>Automated pipelines using GitHub Actions with CI/CD for versioned model deployment</li>
-  <li>Ran stress tests and rollback simulations in staging environments for ML reliability</li>
-  <li>Simulated reward tuning using PPO and TRL for RLHF-style supervised fine-tuning</li>
-</ul>
-
+    <p>
+      Engineered machine learning pipelines from raw data to deployment.
+    </p>
+    <ul class="skills-list">
+      <li>Data preprocessing & feature engineering</li>
+      <li>Model selection & hyperparameter tuning</li>
+      <li>Deployment with TensorFlow Serving & TorchServe</li>
+      <li>MLflow experiment tracking</li>
+    </ul>
   </div>
 
 </body>
 </html>
 
+
+</body>
+</html>
