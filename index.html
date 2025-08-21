@@ -1,307 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artur Everton | AI Governance & DevSecOps Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230099ff'%3E%3Cpath d='M12 2C8.686 2 6 4.686 6 8a5.952 5.952 0 0 0 1.5 3.99A5.952 5.952 0 0 0 6 16a5.952 5.952 0 0 0-1.5 3.99A2 2 0 0 0 4.5 22h15a2 2 0 0 0-1.5-2.01A5.952 5.952 0 0 0 18 16a5.952 5.952 0 0 0 1.5-3.99A5.952 5.952 0 0 0 18 8c0-3.314-2.686-6-6-6zm0 14a4 4 0 0 1 4 4h-8a4 4 0 0 1 4-4z'/%3E%3C/svg%3E" type="image/svg+xml">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artur Everton - Currículo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --bg-color: #0c1021;
-            --panel: #11152a;
-            --panel-2: #1a1f33;
-            --border: #2a3045;
-            --text: #f0f0f0;
-            --muted: #a0a0a0;
-            --accent: #0066cc;
-            --accent-2: #0099ff;
-            --brand: #1e3a8a;
-            --ok: #22c55e;
-            --chip: #2a3041;
-            --font-lato: 'Lato', sans-serif;
-            --font-mono: 'Roboto Mono', monospace;
+            --primary-color: #007BFF;
+            --secondary-color: #343A40;
+            --accent-color: #FFD700;
+            --text-color: #495057;
+            --bg-color: #F8F9FA;
+            --card-bg: #FFFFFF;
+            --border-color: #E9ECEF;
         }
 
-        /* General styles */
-        * { box-sizing: border-box; }
         body {
-            margin: 0;
-            font-family: var(--font-lato);
-            background: var(--bg-color);
-            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            margin: 0;
+            padding: 20px;
         }
-        .container { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem; }
-        h1, h2, h3, h4 { font-family: var(--font-lato); }
 
-        /* Header & Contact */
-        .profile-header {
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px 40px;
+        }
+
+        header {
             text-align: center;
-            padding: 4rem 1rem 2.5rem;
-            margin-bottom: 3rem;
-            position: relative;
-            z-index: 1;
-            border-radius: 16px;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.15), transparent);
-            border: 1px solid var(--border);
-        }
-        .profile-header h1 { font-size: 3.2rem; font-weight: 900; margin: 0 0 0.4rem; }
-        .profile-header h2 { font-size: 1.35rem; font-weight: 700; color: var(--muted); margin: 0 0 1rem; }
-        .contact-info { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; color: var(--muted); }
-        .contact-info a { color: var(--accent-2); text-decoration: none; transition: color 0.3s ease; }
-        .contact-info a:hover { color: var(--accent); }
-
-        /* Section Title */
-        .section-title {
-            font-size: 2rem; font-weight: 900; text-align: center; margin: 0 0 2rem; position: relative;
-            padding-bottom: 15px;
-        }
-        .section-title::after {
-            content: ""; width: 90px; height: 4px; background: linear-gradient(90deg, var(--accent), var(--accent-2));
-            position: absolute; left: 50%; transform: translateX(-50%); bottom: 0; border-radius: 6px;
+            margin-bottom: 40px;
         }
 
-        /* Professional Summary */
-        .summary-panel {
-            background: var(--panel); border: 1px solid var(--border); padding: 2.5rem; border-radius: 14px;
-            margin-bottom: 3rem; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-        .summary-panel p { font-size: 1.1rem; color: var(--text); margin: 0; text-align: justify; }
-        .highlight { font-weight: 700; color: var(--accent-2); }
-        .badge-link {
-            display: inline-block; padding: 0.65rem 1.25rem; border-radius: 999px; text-decoration: none;
-            background: linear-gradient(90deg, var(--accent), var(--brand));
-            color: #fff; font-weight: 800; letter-spacing: 0.2px; font-size: 0.95rem;
-            margin-top: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-        }
-        .badge-link:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); }
-
-        /* Technical Skills & Product Skills */
-        .skills-grid, .product-grid {
-            display: grid; gap: 1.5rem; margin-top: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        }
-        .skill-card, .product-card {
-            background: var(--panel-2); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .skill-card:hover, .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-        }
-        .skill-card h3, .product-card h4 {
-            margin: 0 0 1rem; font-size: 1.2rem; text-align: center; font-weight: 700;
-            color: var(--accent-2);
-        }
-        .chip {
-            display: inline-block; background: #242a41; color: var(--muted);
-            padding: 0.4rem 0.9rem; border-radius: 999px; font-size: 0.85rem;
-            margin: 0.25rem; font-family: var(--font-mono);
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        .chip:hover {
-            background: var(--accent); color: var(--text);
-        }
-        .skill-list {
-            display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0;
-        }
-        .product-card p { font-size: 0.95rem; color: var(--muted); margin: 0.5rem 0 1rem; }
-        .bullet-list { list-style: none; margin: 0; padding: 0; }
-        .bullet-list li {
-            position: relative; padding-left: 28px; margin: 0.6rem 0; color: var(--muted);
-            font-size: 0.95rem;
-        }
-        .bullet-list li::before {
-            content: "✓"; color: var(--ok); font-weight: 700;
-            position: absolute; left: 0;
-        }
-        .core-capabilities-title {
-            font-size: 1.1rem;
+        .profile-name {
+            font-size: 2.8em;
             font-weight: 700;
-            color: var(--text);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
+            color: var(--secondary-color);
+            margin: 0;
         }
 
-        /* Education Section */
-        .education-grid {
-            display: grid; 
-            gap: 1.5rem; 
-            margin-top: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        .profile-title {
+            font-size: 1.2em;
+            font-weight: 400;
+            color: var(--primary-color);
+            margin: 5px 0 0;
         }
-        .education-card {
-            background: var(--panel-2); 
-            border: 1px solid var(--border); 
-            border-radius: 16px; 
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        .section-header {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            text-align: justify;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: var(--border-color);
+            color: var(--text-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .skill-badge:hover {
+            background-color: var(--primary-color);
+            color: var(--card-bg);
+        }
+
+        .project-item, .education-item {
+            margin-bottom: 25px;
+        }
+
+        .project-item h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin: 0;
+        }
+
+        .project-item p {
+            margin-top: 5px;
+            font-size: 0.95em;
+        }
+
+        .education-item h4 {
+            font-size: 1em;
+            font-weight: 600;
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-links {
             text-align: center;
-        }
-        .education-card h3 {
-            margin: 0 0 0.5rem; 
-            font-size: 1.3rem;
-            color: var(--accent-2);
-        }
-        .education-card p {
-            font-size: 0.95rem; 
-            color: var(--muted); 
-            margin: 0.5rem 0;
-        }
-        .education-card em {
-            color: var(--accent-2);
-            font-style: normal;
-            font-weight: 700;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
         }
 
-        /* Research & Education */
-        .research-grid {
-            display: grid; gap: 1.5rem; margin-top: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        .contact-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
         }
-        .research-card h4 { color: #8ab4ff; }
+        
+        .contact-links a:hover {
+            color: var(--primary-color);
+        }
 
-        /* Footer */
-        .footer-minimal {
-            text-align: center; padding: 2rem 1rem; margin-top: 3rem;
-            border-top: 2px solid var(--border); color: var(--muted);
+        .contact-links .icon-text {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .footer-button-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
-        .footer-btn {
-            display: flex; align-items: center; justify-content: center;
-            background: var(--brand); color: #fff; padding: 0.7rem 1.4rem; border-radius: 999px;
-            text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .footer-btn svg { width: 1.1em; height: 1.1em; margin-right: 8px; fill: currentColor; }
-        .footer-btn:hover { background: var(--accent-2); transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); }
 
-        /* Responsive adjustments */
+        /* Responsividade */
         @media (max-width: 768px) {
-            .profile-header { padding: 2.5rem 1rem 1.5rem; }
-            .profile-header h1 { font-size: 2.2rem; }
-            .profile-header h2 { font-size: 1.1rem; }
-            .section-title { font-size: 1.6rem; }
-            .container { padding: 1.5rem 1rem; }
-            .summary-panel, .education-card { padding: 1.5rem; }
-            .badge-link { font-size: 0.85rem; padding: 0.6rem 1rem; }
-            .education-grid { grid-template-columns: 1fr; }
+            .container {
+                padding: 20px;
+            }
+            .profile-name {
+                font-size: 2em;
+            }
+            .profile-title {
+                font-size: 1em;
+            }
+            .main-content {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
-
 <body>
+
     <div class="container">
-        <header class="profile-header">
-            <h1>Artur Everton</h1>
-            <h2>AI Governance & DevSecOps Engineer</h2>
-            <div class="contact-info">
-                <span>+55 61 99670-0127</span> |
-                <a href="mailto:artur@brachat.com.br">artur@brachat.com.br</a> |
-                <a href="https://github.com/Arturbeverton" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
+        <header>
+            <h1 class="profile-name">Artur Everton</h1>
+            <h2 class="profile-title">
+                🎓 Estudante de Ciência da Computação | 💻 Desenvolvedor Python & JavaScript Júnior | 🤖 Entusiasta em IA & Data Science
+            </h2>
         </header>
 
-        <main>
-            <section class="summary-panel">
-                <h2 class="section-title">Resumo Profissional</h2>
-                <p>
-                    Engenheiro de AI Governance & DevSecOps com foco em arquitetar sistemas de IA seguros e em conformidade com as normas regulatórias mais atuais. Minha especialidade é integrar *rastreabilidade, explicabilidade e segurança* em pipelines de LLM e RAG. Utilizo *Policy-as-Code (OPA/Rego)* e automação para garantir a aderência a padrões como *ISO/IEC 42001, AI Act, GDPR/LGPD* e outros frameworks de governança aplicáveis.
-                </p>
-                <div style="text-align:center; margin-top: 1.5rem;">
-                    <h4 style="margin: 0 0 0.5rem; color: var(--accent-2);">Portfólio em Destaque:</h4>
-                    <a href="https://brachat.com.br" class="badge-link" target="_blank" rel="noreferrer">
-                        Brachat_SaaS: Uma suíte de auditoria de IA premium
-                    </a>
-                </div>
-            </section>
-            
-            <section style="margin-top: 3rem;">
-                <h2 class="section-title">Educação</h2>
-                <div class="education-grid">
-                    <div class="education-card">
-                        <h3>Formado em Ciência da Engenharia</h3>
-                        <p><em>Universidade de Brasília (UnB)</em></p>
-                        <p>Concluído em 2022</p>
-                        <p>Ênfase em modelagem matemática, computação científica e sistemas complexos</p>
-                    </div>
-                </div>
-            </section>
+        <section class="about">
+            <h2 class="section-header">🚀 Sobre Mim</h2>
+            <p class="about-text">Sou estudante de Ciência da Computação na University of the People, com foco em Inteligência Artificial, Data Science e DevSecOps.</p>
+            <p class="about-text">Atualmente colaboro no desenvolvimento de uma plataforma de Governança de IA e Compliance, aplicando boas práticas de segurança (DevSecOps) e integração com normas internacionais, como ISO/IEC 42001, GDPR/LGPD e o AI Act da União Europeia.</p>
+            <p class="about-text">Tenho paixão em transformar teoria em soluções práticas: desde pipelines de Machine Learning até experimentos com LLMs, Computer Vision e sistemas seguros em nuvem.</p>
+        </section>
 
-            <section style="margin-top: 3rem;">
-                <h2 class="section-title">Product-Led AI Governance Capabilities</h2>
-                <div class="product-grid">
-                    <div class="product-card">
-                        <h4>🚀 Full-Stack AI Engineering</h4>
-                        <p>Architected full-stack systems with *Next.js, FastAPI, and Spring Boot, leveraging **CI/CD, Docker, and Kubernetes. Implemented end-to-end testing with **Playwright/Cypress* and observability using *Prometheus/Grafana* for scalable, production-grade applications.</p>
+        <div class="main-content">
+            <div class="left-column">
+                <section class="skills">
+                    <h2 class="section-header">🔑 Habilidades & Competências</h2>
+                    <div class="skills-grid">
+                        <span class="skill-badge"><i class="fas fa-code"></i> Python</span>
+                        <span class="skill-badge"><i class="fas fa-code"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-badge"><i class="fas fa-brain"></i> IA & Data Science</span>
+                        <span class="skill-badge"><i class="fas fa-shield-alt"></i> DevSecOps</span>
+                        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-badge"><i class="fas fa-server"></i> Docker</span>
+                        <span class="skill-badge"><i class="fas fa-laptop-code"></i> Jupyter</span>
                     </div>
-                    <div class="product-card">
-                        <h4>🔐 DevSecOps & AI Security</h4>
-                        <p>Engineered secure *GenAI pipelines* aligned with *OWASP, NIST, ISO, and Zero Trust. Automated security scans with **Semgrep, Trivy, Checkov, and governed infrastructure using **policy-as-code (OPA/Rego)* and *HashiCorp Vault*.</p>
+                </section>
+                
+                <section class="education">
+                    <h2 class="section-header">🎯 Formação Acadêmica</h2>
+                    <div class="education-item">
+                        <h4>University of the People</h4>
+                        <p>Bacharelado em Ciência da Computação (2025 – 2028)</p>
                     </div>
-                    <div class="product-card">
-                        <h4>🧭 AI Governance & Compliance</h4>
-                        <p>Designed traceable governance workflows compliant with *ISO/IEC 42001, AI Act, and NIST RMF. Operationalized compliance using automated registries, **Model Cards, and cross-framework checklists with **policy-as-code* enforcement.</p>
+                    <div class="education-item">
+                        <h4>WorldQuant University</h4>
+                        <p>Applied Data Science Lab & Applied AI Lab (Computer Vision, 2025)</p>
                     </div>
-                    <div class="product-card">
-                        <h4>🧠 LLMs, LangChain & RAG</h4>
-                        <p>Built modular *LLM pipelines* using *LangChain/LangGraph* with advanced *RAG. Implemented hybrid retrieval, agentic workflows, and observability with **LangSmith. Benchmarked performance with **RAGAS* and conducted prompt testing with *Promptfoo*.</p>
+                    <div class="education-item">
+                        <h4>Estudos Autônomos</h4>
+                        <p>LLMs, Deploy Seguro de IA, Ambientes em Nuvem</p>
                     </div>
-                    <div class="product-card">
-                        <h4>⚖ Ethics, Fairness & Explainability</h4>
-                        <p>Embedded ethical risk analysis and fairness audits into AI pipelines using *XAI* tools like *SHAP and LIME. Mapped ethical risks to international standards (ISO 24028, IEEE 7000) and conducted fairness audits with **Fairlearn*.</p>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="projects">
+                    <h2 class="section-header">📂 Projeto em Destaque</h2>
+                    <div class="project-item">
+                        <h3>🛡️ AI Governance & Compliance Platform</h3>
+                        <p>Atuação prática no desenvolvimento de uma plataforma que integra:</p>
+                        <ul>
+                            <li>Automação de gestão de riscos em pipelines de IA/ML</li>
+                            <li>Checagens de segurança DevSecOps integradas ao CI/CD</li>
+                            <li>Governança by design: explicabilidade, auditabilidade e conformidade com normas internacionais</li>
+                            <li>Módulos para segurança, monitoramento e avaliação de LLMs</li>
+                        </ul>
                     </div>
-                    <div class="product-card">
-                        <h4>💼 Executive Strategy & Product</h4>
-                        <p>Translated *GenAI capabilities into business value* using frameworks like *Gartner, McKinsey, and ISO 42001. Designed **go-to-market strategies*, product roadmaps, and commercial models with a focus on compliance and ROI clarity.</p>
-                    </div>
-                    <div class="product-card">
-                        <h4>💹 Finance & Applied AI</h4>
-                        <p>Built AI pipelines for financial forecasting and risk modeling, integrating interpretable ML for audit-ready insights. Simulated trading strategies and applied governance frameworks (*MiFID II, SR11-7*) to model behavior and compliance.</p>
-                    </div>
-                    <div class="product-card">
-                        <h4>🧠 AI Model Training & Custom ML</h4>
-                        <p>Trained and deployed custom AI/ML models with *TensorFlow/PyTorch. Managed model lifecycle with **MLflow/DVC, automated pipelines with **GitHub Actions*, and optimized for latency and efficiency.</p>
-                    </div>
-                    <div class="product-card">
-                        <h4>🧠 Neurotechnology & AI Applied</h4>
-                        <p>Integrated human-computer interaction pipelines for brain-inspired AI systems. Simulated real-time mental state classification, neuro-symbolic processing, and neuroethics enforcement using structured logging and consent-aware data pipelines.</p>
-                    </div>
-                    <div class="product-card">
-                        <h4>🎮 AI Auditing for Games</h4>
-                        <p>Engineered end-to-end integrity and compliance pipelines for AI-powered game systems. Designed real-time anti-cheat detection, matchmaking fairness audits, and content moderation with structured logging, explainable decisions, and compliance-ready evidence trails.</p>
-                    </div>
-                    <div class="product-card">
-                        <h4>⚙ Quantum & Scientific AI</h4>
-                        <p>Prototyped *hybrid QML* systems with *Qiskit/PennyLane* and documented reproducible scientific pipelines for finance, NLP, and optimization use cases. Applied error mitigation strategies and benchmarked quantum expressivity against classical ML baselines.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+                </section>
+            </div>
+        </div>
+
+        <section class="contact">
+            <h2 class="section-header">📫 Vamos Conectar?</h2>
+            <div class="contact-links">
+                <a href="https://linkedin.com/in/artureverton-everton-434bb237b" target="_blank">
+                    <div class="icon-text"><i class="fab fa-linkedin"></i> LinkedIn</div>
+                </a>
+                <a href="https://github.com/art2324" target="_blank">
+                    <div class="icon-text"><i class="fab fa-github"></i> GitHub</div>
+                </a>
+                <a href="https://github.com/brachattech" target="_blank">
+                    <div class="icon-text"><i class="fas fa-rocket"></i> Showcase BrachatTech</div>
+                </a>
+            </div>
+        </section>
     </div>
 
-    <footer class="footer-minimal">
-        <div class="footer-button-group">
-            <a class="footer-btn" href="mailto:artur@brachat.com.br" aria-label="Send an email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.223V6h16zM4 18V9.755l7.927 6.177L12 16.03l.073-.098L20 9.755V18H4z"></path></svg>
-                Email
-            </a>
-            <a class="footer-btn" href="https://github.com/Arturbeverton" target="_blank" rel="noreferrer" aria-label="Go to GitHub profile">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.304.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.020.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.61.8.576 4.765-1.589 8.204-6.086 8.204-11.387C24 极 18.627 0 12 0z"></path></svg>
-                GitHub
-            </a>
-        </div>
-        <div class="footer-bottom">
-            © 2025 Artur Everton. All rights reserved.
-        </div>
-    </footer>
 </body>
 </html>
